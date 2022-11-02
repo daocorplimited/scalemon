@@ -1,0 +1,6 @@
+# Use the 'create api' subcommand to add watches to this file.
+- group: monitoring.stompy.io
+  version: v1alpha1
+  kind: Scalemon
+  chart: helm-charts/scalemon
+#+kubebuilder:scaffold:watch

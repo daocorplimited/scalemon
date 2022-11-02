@@ -1,0 +1,27 @@
+# permissions for end users to view scalemons.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: scalemon-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: scalemon-ops
+    app.kubernetes.io/part-of: scalemon-ops
+    app.kubernetes.io/managed-by: kustomize
+  name: scalemon-viewer-role
+rules:
+- apiGroups:
+  - monitoring.stompy.io
+  resources:
+  - scalemons
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - monitoring.stompy.io
+  resources:
+  - scalemons/status
+  verbs:
+  - get
