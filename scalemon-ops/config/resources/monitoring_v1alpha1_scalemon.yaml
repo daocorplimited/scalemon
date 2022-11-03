@@ -1,7 +1,7 @@
 apiVersion: monitoring.stompy.io/v1alpha1
 kind: Scalemon
 metadata:
-  name: scalemon-sample
+  name: default
 spec:
   # Default values copied from <project_dir>/helm-charts/scalemon/values.yaml
   affinity: {}
@@ -13,8 +13,6 @@ spec:
   fullnameOverride: ""
   image:
     pullPolicy: IfNotPresent
-    repository: nginx
-    tag: ""
   imagePullSecrets: []
   ingress:
     annotations: {}
