@@ -7,7 +7,7 @@
 
 ## Deploy Kubernetes operator
 
-Kubernetes operator is implemented with (Operator Framework) [https://sdk.operatorframework.io/docs/building-operators/helm/quickstart/] to run it the following actions should be done:
+Kubernetes operator is implemented with Operator Framework (https://sdk.operatorframework.io/docs/building-operators/helm/quickstart/) to run it the following actions should be done:
 
 1. Install the operator to the destination cluster.
 1. Install 1+ instances of monitoring app (scalemon)
