@@ -5,6 +5,10 @@
 1. scalemon: golang application with monitoring business logic (scale monitor, scalemon).
 1. scalemon-ops: kubernetes operator which manages monitoring deployments (scalemons)
 
+## Installing single instance with Helm
+
+
+
 ## Deploy Kubernetes operator
 
 Kubernetes operator is implemented with Operator Framework (https://sdk.operatorframework.io/docs/building-operators/helm/quickstart/) to run it the following actions should be done:

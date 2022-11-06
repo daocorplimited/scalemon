@@ -8,8 +8,8 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /scalemon
+RUN go build
 
 EXPOSE 8085
 
-CMD [ "/scalemon" ]
+CMD [ "./scalemon" ]
