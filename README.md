@@ -9,7 +9,7 @@
 
 From the machine, connected to a Kubernetes cluster could be installed with Helm 3 by running the following command:
 
-                $ helm upgrade --install scalemon ./.helm/scalemon
+                $ helm upgrade --install scalemon ./scalemon/.helm/scalemon
 
 The command will install the scalemon app instance together with standalone mongodb. To delete the application instance from a Kubernetes cluster run the following:
 
